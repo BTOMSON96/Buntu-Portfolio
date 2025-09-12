@@ -67,7 +67,7 @@ function sendWhatsappText(e) {
 }
 
 function goToResumeCreatorApp(){
-  window.open("http://localhost:8081/Buntu-Portfolio/ResumeCreator/", '_blank');
+  window.open("http://localhost:8081/Buntu-Portfolio/ResumeCreator", '_blank');
 }
 
 </script>
