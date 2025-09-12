@@ -2,7 +2,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Buntu Tomson — CV Form</title>
+<title>CV Form</title>
 <style>
   body {font-family: Arial, sans-serif; font-size: 13px; margin: 40px; line-height: 1.5; color: #222; background-color: #f7f7f7;}
 
@@ -71,12 +71,12 @@
   <div class="section">
     <h2>Professional Experience</h2>
     <label for="experience1_title">Job Title / Role</label>
-    <input type="text" id="experience1_title" name="experience1_title" placeholder="Full-Stack Developer — Company" required>
+    <input type="text" id="experience1_title" name="experience1_title" placeholder="Full-Stack Developer - Company" required>
 
     <label for="experience1_period">Period</label>
-    <input type="text" id="experience1_period" name="experience1_period" placeholder="Feb 2022 — Present" required>
+    <input type="text" id="experience1_period" name="experience1_period" placeholder="Feb 2022 - Present" required>
 
-    <label for="experience1_details">Responsibilities / Achievements</label>
+    <label for="experience1_details">Responsibilities</label>
     <textarea id="experience1_details" name="experience1_details" rows="6" placeholder="Describe your work experience here..." required></textarea>
   </div>
 
@@ -89,7 +89,7 @@
   <div class="section">
     <h2>Education & Certifications</h2>
     <label for="education">Education / Certifications</label>
-    <textarea id="education" name="education" rows="4" placeholder="Degree / Certification — Institution" required></textarea>
+    <textarea id="education" name="education" rows="4" placeholder="Degree / Certification - Institution" required></textarea>
   </div>
 
   <div class="section">
@@ -101,10 +101,10 @@
   <div class="section">
     <h2>References</h2>
     <label for="references">References</label>
-    <textarea id="references" name="references" rows="4" placeholder="Name — Contact" required></textarea>
+    <textarea id="references" name="references" rows="4" placeholder="Name - Contact" required></textarea>
   </div>
 
-   <div style="text-align: center;"> <button type="submit">Submit Resume</button></div>
+   <div style="text-align: center;"> <button type="submit">Submit</button></div>
 </form>
 </main>
 
