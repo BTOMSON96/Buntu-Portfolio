@@ -27,7 +27,7 @@ public class HomeAction {
     }
     @GetMapping("/ResumeCreator")
     public String goToResumeCreatorPage() {
-        return "menu";
+        return "resumeCreatorForm";
     }
 
     @PostMapping("/generatePDF")
