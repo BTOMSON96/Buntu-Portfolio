@@ -98,14 +98,14 @@ function goToResumeCreatorApp(){
 
     <section id="about">
         <h3>About Me</h3>
-        <p>I'm Buntu, a Full Stack Developer and DevOps enthusiast with over 4 years of experience designing, building, and maintaining robust, scalable web applications.
-          I have extensive experience with Java, Spring Boot, SQL, and modern development practices, as well as hands-on expertise in DevOps tools and workflows, including CI/CD pipelines, containerization, and automated deployment strategies.</p>
+        <p>I'm a Full Stack Developer and DevOps enthusiast with over 4 years of experience designing, building, and maintaining robust, scalable web applications.
+          I have extensive experience with Java, Spring Boot, Database admin, and modern development practices, as well as hands-on expertise in DevOps tools and workflows, including CI/CD pipelines, containerization, and automated deployment strategies.</p>
     </section>
 
     <section id="projects">
         <h3>Projects</h3>
         <strong>Resume Creator Web App</strong>
-        <p>The Resume Creator is a web application I built to help users quickly design and generate professional resumes in PDF format. It allows users to enter their details, customize the layout, and instantly export a polished document that's ready to use. On the backend, the app is powered by Java and Spring Boot, handling file uploads, data processing, and PDF generation. On the frontend, I kept the interface simple and user-friendly to make the process fast and intuitive. I also implemented DevOps practices such as automated builds and deployments using Jenkins, ensuring that new features and updates are delivered smoothly. This project demonstrates my ability to work across the full stack, from designing the UI, to managing server-side logic, to automating deployment. Try it out by clicking the button below to create your own resume.</p>
+        <p>The Resume Creator is a web application I built to help users quickly design and generate professional resumes in PDF format. It allows users to enter their details and instantly generated a polished document that's ready to use. On the backend, the app is powered by Java and Spring Boot, Processing user details, and PDF generation. On the frontend, I kept the interface simple and user-friendly to make the process fast and intuitive. I also implemented DevOps practices such as automated builds and deployments using Jenkins, ensuring that new features and updates are delivered smoothly. This project demonstrates my ability to work across the full stack, from designing the UI, to managing server-side logic, to automating deployment. Try it out by clicking the button below to create your own resume.</p>
         <div class="projects">
           <button class="btn" onclick="goToResumeCreatorApp();">Resume Creator</button>
         </div>

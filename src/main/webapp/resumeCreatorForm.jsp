@@ -104,7 +104,7 @@
     <textarea id="references" name="references" rows="4" placeholder="Name - Contact" required></textarea>
   </div>
 
-   <div style="text-align: center;"> <button type="submit">Submit</button></div>
+   <div style="text-align: center;"> <button type="submit">Generate Resume</button></div>
 </form>
 </main>
 
