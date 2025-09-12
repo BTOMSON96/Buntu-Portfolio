@@ -58,8 +58,8 @@ function sendWhatsappText(e) {
 
   const phone = "0662526608";
   const message = e.target.TextMessage.value.trim();
-  const yourName e.target.yourName.value.trim();
-  const yourNumber e.target.yourNumber.value.trim();
+  const yourName = e.target.yourName.value.trim();
+  const yourNumber = e.target.yourNumber.value.trim();
 
   if (message) {
     if(isValidNumber(yourNumber)){
