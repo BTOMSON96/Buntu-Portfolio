@@ -58,9 +58,17 @@ function sendWhatsappText(e) {
 
   const phone = "0662526608";
   const message = e.target.TextMessage.value.trim();
+  const yourName e.target.yourName.value.trim();
+  const yourNumber e.target.yourNumber.value.trim();
 
   if (message) {
-    alert("Not Implemented yet. Sent me a Whatsapp message on "+phone);
+    if(isValidNumber(yourNumber)){
+      alert("Not Implemented yet. Send me a Whatsapp message on "+phone);
+    }else{
+      alert("This is not a valid number "+yourNumber);
+    }
+
+
   } else {
     alert("Please type a message before sending.");
   }
@@ -69,6 +77,10 @@ function sendWhatsappText(e) {
 function goToResumeCreatorApp(){
   window.open("http://localhost:8081/Buntu-Portfolio/ResumeCreator", '_blank');
 }
+function isValidNumber(value) {
+  return /^[0-9]+$/.test(value);
+}
+
 
 </script>
 </head>
