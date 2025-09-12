@@ -33,7 +33,7 @@
 
 <main>
   <h1 style="text-align: center;">Resume Form</h1>
-<form id="cvForm" action="/ResumeCreator/generatePDF">
+<form id="cvForm" action="/Buntu-Portfolio/generatePDF"  method="POST">
 
   <div class="section">
     <h2>Personal Information</h2>

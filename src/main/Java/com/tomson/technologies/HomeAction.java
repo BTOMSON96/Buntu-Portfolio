@@ -36,7 +36,6 @@ public class HomeAction {
     @PostMapping("/generatePDF")
     public void generatePDF(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         System.out.println("FileUploadController.generatePDF() - START");
-
         HashMap<String, String> map = new HashMap<>();
 
         map.put("name", request.getParameter("fullName"));
@@ -45,8 +44,8 @@ public class HomeAction {
         map.put("phone", request.getParameter("phone"));
         map.put("address", request.getParameter("address"));
         map.put("linkedIn", request.getParameter("linkedin"));
-        map.put("proffesonalSummary", request.getParameter("linkedin"));
-        map.put("skills", request.getParameter("summary"));
+        map.put("proffesonalSummary", request.getParameter("summary"));
+        map.put("skills", request.getParameter("skills"));
         map.put("currentRole", request.getParameter("experience1_title"));
         map.put("period", request.getParameter("experience1_period"));
         map.put("responsiblities", request.getParameter("experience1_details"));

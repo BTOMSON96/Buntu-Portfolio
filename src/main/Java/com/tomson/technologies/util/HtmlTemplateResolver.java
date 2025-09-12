@@ -12,27 +12,6 @@ import java.util.HashMap;
 @Service
 public class HtmlTemplateResolver {
 
-    public static Part resolveTemplate(HashMap<String, String> values) throws IOException {
-        // Load file from resources/static
-        InputStream inputStream = HtmlTemplateResolver.class.getClassLoader().getResourceAsStream("static/resumeTemplate.html");
-
-        if (inputStream == null) {
-            throw new FileNotFoundException("resumeTemplate.html not found in resources/static/");
-        }
-
-        String fileInput = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
-
-        // ResolveExpression
-        for (String key : values.keySet()) {
-            fileInput = fileInput.replace("${" + key + "}", values.get(key));
-        }
-
-        byte[] resolvedBytes = fileInput.getBytes(StandardCharsets.UTF_8);
-
-        // Wrap into a custom Part
-        return new InMemoryPart("resumeTemplate.html", resolvedBytes);
-    }
-
     // Custom Part implementation
     private static class InMemoryPart implements Part {
         private final String fileName;
@@ -95,4 +74,27 @@ public class HtmlTemplateResolver {
             return Collections.emptyList();
         }
     }
+
+
+    public static Part resolveTemplate(HashMap<String, String> values) throws IOException {
+        // Load file from resources/static
+        InputStream inputStream = HtmlTemplateResolver.class.getClassLoader().getResourceAsStream("static/resumeTemplate.html");
+
+        if (inputStream == null) {
+            throw new FileNotFoundException("resumeTemplate.html not found in resources/static/");
+        }
+
+        String fileInput = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
+
+        // Resolve Expressions
+        for (String key : values.keySet()) {
+            fileInput = fileInput.replace("${" + key + "}", values.get(key));
+        }
+
+        byte[] resolvedBytes = fileInput.getBytes(StandardCharsets.UTF_8);
+
+        // Wrap into a custom Part
+        return new InMemoryPart("resumeTemplate.html", resolvedBytes);
+    }
+
 }

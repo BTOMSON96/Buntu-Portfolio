@@ -60,7 +60,7 @@ function sendWhatsappText(e) {
   const message = e.target.TextMessage.value.trim();
 
   if (message) {
-    alert("Not Implemented yet");
+    alert("Not Implemented yet. Sent me a Whatsapp message on "+phone);
   } else {
     alert("Please type a message before sending.");
   }
