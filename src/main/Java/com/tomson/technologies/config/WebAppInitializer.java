@@ -9,7 +9,7 @@ import java.io.File;
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
-    public static final String UPLOAD_DIR = "C:/ResumeCreator/temp";
+    public static final String UPLOAD_DIR = "/tmp/uploads"; //Change to C:/ResumeCreator/temp when testing on windows
     private static final long MAX_FILE_SIZE = 10485760;       // 10MB
     private static final long MAX_REQUEST_SIZE = 52428800;    // 50MB
     private static final int FILE_SIZE_THRESHOLD = 1048576;   // 1MB

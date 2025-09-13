@@ -65,7 +65,7 @@ function sendWhatsappText(e) {
     if(isValidNumber(yourNumber)){
       alert("Not Implemented yet. Send me a Whatsapp message on "+phone);
     }else{
-      alert(yourNumber+ "Is not a valid number");
+      alert(yourNumber+ " Is not a valid number");
     }
   } else{
     alert("Please type a message before sending.");
