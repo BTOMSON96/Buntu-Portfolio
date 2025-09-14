@@ -31,7 +31,7 @@
     /* Left-align on small screens */
     @media (max-width: 600px) {
         p {
-            text-align: left;
+             text-align: justify;
         }
     }
 
