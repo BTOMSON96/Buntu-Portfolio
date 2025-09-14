@@ -73,7 +73,7 @@ function sendWhatsappText(e) {
 }
 
 function goToResumeCreatorApp(){
-  window.open("http://localhost:8081/Buntu-Portfolio/ResumeCreator", '_blank');
+   window.location.href = window.location.origin + "/ResumeCreator";
 }
 function isValidNumber(value) {
   return /^[0-9]+$/.test(value);
