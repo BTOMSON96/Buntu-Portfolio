@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Buntu's Portfolio</title>
 <style>
-    body {font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif; font-size: 16px; margin: 40px; line-height: 154%; color: #222;}
+    body {font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif; font-size: 16px; margin: 40px; color: #222;}
 
     header { background-color: #3b66d1; /* Blue header */color: white;padding: 20px;display: flex;justify-content: space-between; align-items: center;}
 
@@ -43,12 +43,17 @@
     section h3 {font-size: 22px;margin-bottom: 10px; }
 
     .logo{margin-left: 40%;  font-weight:700}
-    .intro-logo{width: 150px; height: 150px; border-radius: 8px; background: linear-gradient(45deg, black, transparent); display: flex; align-items: center;}
+    .intro-logo{width: 17%; height: 150px; border-radius: 8px; background: linear-gradient(45deg, black, transparent); display: flex; align-items: center;}
 
      /* contact */
     .contactForm{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
      textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background: lightgrey;color:black;grid-column:1/-1;min-height:90px; font-size: 16px;}
     .inputField{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:lightgrey;color:black}
+    @media (max-width: 600px) {
+        .contactForm {
+            grid-template-columns: 1fr;
+        }
+    }
 
     footer {text-align: center;margin: 40px 0 20px 0;color: #777;}
 </style>
@@ -109,7 +114,7 @@ function isValidNumber(value) {
     <section id="about">
         <h3>About Me</h3>
         <p>I'm a Full Stack Developer and DevOps enthusiast with over 4 years of experience designing, building, and maintaining robust, scalable web applications.
-          I have extensive experience with Java, Spring Boot, Database admin, and modern development practices, as well as hands-on expertise in DevOps tools and workflows, including CI/CD pipelines, containerization, and automated deployment strategies.</p>
+          I have extensive experience with Java, Spring Boot, Database administration, and modern development practices, as well as hands-on expertise in DevOps tools and workflows, including CI/CD pipelines, containerization, and automated deployment strategies.</p>
     </section>
 
     <section id="projects">
@@ -122,15 +127,13 @@ function isValidNumber(value) {
     </section>
 
     <section id="contact">
-      <div class="card" id="contact">
       <h3>Contact</h3>
       <form onsubmit="sendWhatsappText(event)" class="contactForm">
         <input placeholder="Your name" required name="yourName"  class="inputField"/>
         <input placeholder="Your number" required name="yourNumber"  class="inputField"/>
-        <textarea name="TextMessage" placeholder="Write your WhatsApp message here.." required></textarea>
+        <textarea name="TextMessage" placeholder="Write your message here.." required></textarea>
         <button type="submit" class="btn">Send message</button>
       </form>
-    </div>
     </section>
 </main>
 

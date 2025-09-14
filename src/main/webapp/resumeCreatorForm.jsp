@@ -82,25 +82,24 @@
 
   <div class="section">
     <h2>Key Achievements</h2>
-    <label for="achievements">Achievements</label>
+
     <textarea id="achievements" name="achievements" rows="6" placeholder="List key achievements..." required></textarea>
   </div>
 
   <div class="section">
     <h2>Education & Certifications</h2>
-    <label for="education">Education / Certifications</label>
+
     <textarea id="education" name="education" rows="4" placeholder="Degree / Certification - Institution" required></textarea>
   </div>
 
   <div class="section">
     <h2>Core Competencies</h2>
-    <label for="competencies">Competencies</label>
+
     <textarea id="competencies" name="competencies" rows="6" placeholder="Development, Database Admin, SDLC, etc." required></textarea>
   </div>
 
   <div class="section">
     <h2>References</h2>
-    <label for="references">References</label>
     <textarea id="references" name="references" rows="4" placeholder="Name - Contact" required></textarea>
   </div>
 
