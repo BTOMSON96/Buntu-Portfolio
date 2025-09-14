@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Buntu's Portfolio</title>
 <style>
-    body {font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif; font-size: 16px; margin: 40px; color: #222;}
+    body {font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif; font-size: 16px; color: #222;}
 
     header { background-color: #3b66d1; /* Blue header */color: white;padding: 20px;display: flex;justify-content: space-between; align-items: center;}
 
