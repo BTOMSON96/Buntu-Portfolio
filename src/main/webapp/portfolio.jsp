@@ -20,14 +20,20 @@
     /* Main content */
     main {max-width: 900px;margin: 40px auto;background-color: white;padding: 30px;border-radius: 12px;box-shadow: 0px 0px 15px rgba(0,0,0,0.1);}
 
-    .intro {display: flex;align-items: center;justify-content: space-between; margin-bottom: 40px;
+
+    p{word-spacing: normal; letter-spacing: normal; text-align: left; line-height: 1.5;}
+    @media (min-width: 601px) {
+        p {
+            text-align: justify;
+        }
     }
 
-    .intro-text {max-width: 80%;}
-
-    .intro-text h2 {margin: 0 0 10px 0;font-size: 28px;color: #111;}
-
-    p{text-align: justify;}
+    /* Left-align on small screens */
+    @media (max-width: 600px) {
+        p {
+            text-align: left;
+        }
+    }
 
     .btn {background-color: #3b66d1;color: white;border: none;padding: 10px 20px;border-radius: 6px;cursor: pointer;font-size: 16px;
     }
@@ -42,8 +48,46 @@
 
     section h3 {font-size: 22px;margin-bottom: 10px; }
 
-    .logo{margin-left: 40%;  font-weight:700}
-    .intro-logo{width: 17%; height: 150px; border-radius: 8px; background: linear-gradient(45deg, black, transparent); display: flex; align-items: center;}
+    /*.logo{margin-left: 40%;  font-weight:700}*/
+    /* .intro-logo{width: 17%; height: 150px; border-radius: 8px; background: linear-gradient(45deg, black, transparent); display: flex; align-items: center;}*/
+
+    .intro {
+      display: flex;
+      flex-direction: column; /* default: stack vertically */
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .intro-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; /* space between h2 and logo */
+    }
+
+    .intro-logo {
+      width: auto;
+      height: 1.5rem; /* adjust to match h2 height */
+      font-weight: bold;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(45deg, black, transparent);
+      color: white;
+      border-radius: 0.25rem;
+    }
+
+    /* MOBILE: for very small screens, scale the logo */
+    @media (max-width: 640px) {
+      .intro-header h2 {
+        font-size: 1.75rem; /* slightly smaller if needed */
+      }
+      .intro-logo {
+        height: 1.75rem; /* match h2 font size */
+        font-size: 1rem;
+        padding: 0 0.25rem;
+      }
+    }
 
      /* contact */
     .contactForm{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
@@ -100,15 +144,18 @@ function isValidNumber(value) {
 
 <main>
     <div class="intro">
-        <div class="intro-text">
-            <h2>Hi, I'm Buntu</h2>
-            <p>a Full Stack Developer with 4+ years of experience building scalable web applications. Check out my work or download my resume below.</p>
-            <form method="POST" action="/Buntu-Portfolio/downloadMyCV" enctype="multipart/form-data">
-              <button  type="submit"  class="btn">Download CV</button>
-            </form>
-
+      <div class="intro-text">
+        <div class="intro-header">
+          <h2>Hi, I'm Buntu</h2>
+          <div class="intro-logo">BT</div>
         </div>
-        <div class="intro-logo"><div class="logo">BT</div></div>
+        <p>
+          A Full Stack Developer with 4+ years of experience building scalable web applications. Check out my work or download my resume below.
+        </p>
+        <form method="POST" action="/Buntu-Portfolio/downloadMyCV" enctype="multipart/form-data">
+          <button type="submit" class="btn">Download CV</button>
+        </form>
+      </div>
     </div>
 
     <section id="about">
